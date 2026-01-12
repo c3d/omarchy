@@ -7,12 +7,12 @@
   "modules-left": ["custom/omarchy", "hyprland/workspaces"],
   "modules-center": ["clock", "custom/update", "custom/voxtype", "custom/screenrecording-indicator"],
   "modules-right": [
-    "hyprland/language",
+    "cpu",
     "group/tray-expander",
     "bluetooth",
     "network",
     "pulseaudio",
-    "cpu",
+    "hyprland/language",
     "battery"
   ],
   "hyprland/language": {
