@@ -91,3 +91,48 @@ tooltip {
 #custom-voxtype.recording {
   color: #a55555;
 }
+
+/* CPU 10-level heatmap: navy blue → dark green → yellow → orange → bright red */
+#cpu {
+  color: #1a4d8f; /* Level 0: Dark navy blue (0-10%) */
+}
+
+#cpu.level1 {
+  color: #2a7a52; /* Level 1: Blue-green (10-20%) */
+}
+
+#cpu.level2 {
+  color: #40a02b; /* Level 2: Dark green (20-30%) - Catppuccin Green */
+}
+
+#cpu.level3 {
+  color: #74a940; /* Level 3: Yellow-green (30-40%) */
+}
+
+#cpu.level4 {
+  color: #a6ad47; /* Level 4: Lime (40-50%) */
+}
+
+#cpu.level5 {
+  color: #d4a837; /* Level 5: Yellow-orange (50-60%) */
+}
+
+#cpu.level6 {
+  color: #df8e1d; /* Level 6: Yellow (60-70%) - Catppuccin Yellow */
+}
+
+#cpu.level7 {
+  color: #f66818; /* Level 7: Orange (70-80%) */
+}
+
+#cpu.level8 {
+  color: #e64553; /* Level 8: Red-orange (80-90%) - Catppuccin Maroon */
+}
+
+#cpu.level9 {
+  color: #d20f39; /* Level 9: Red (90-95%) - Catppuccin Red */
+}
+
+#cpu.level10 {
+  color: #a50f2f; /* Level 10: Dark red (95-100%) */
+}

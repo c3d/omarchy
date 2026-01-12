@@ -7,6 +7,7 @@
   "modules-left": ["custom/omarchy", "hyprland/workspaces"],
   "modules-center": ["clock", "custom/update", "custom/voxtype", "custom/screenrecording-indicator"],
   "modules-right": [
+    "hyprland/language",
     "group/tray-expander",
     "bluetooth",
     "network",
@@ -14,6 +15,12 @@
     "cpu",
     "battery"
   ],
+  "hyprland/language": {
+    "format": "{}",
+    "format-en": "🇺🇸",
+    "format-fr": "🇫🇷",
+    "on-click": "hyprctl switchxkblayout all next"
+  },
   "hyprland/workspaces": {
     "on-click": "activate",
     "format": "{icon}",
@@ -55,10 +62,32 @@
   },
 
   "cpu": {
-    "interval": 5,
-    "format": "󰍛",
+    "interval": 1,
+    "format": "{usage}% {icon0}{icon1}{icon2}{icon3}",
+    "format-icons": [
+        "▁",  // 0-12.5%
+        "▂",  // 12.5-25%
+        "▃",  // 25-37.5%
+        "▄",  // 37.5-50%
+        "▅",  // 50-62.5%
+        "▆",  // 62.5-75%
+        "▇",  // 75-87.5%
+        "█"   // 87.5-100%
+    ],
     "on-click": "omarchy-launch-or-focus-tui btop",
-    "on-click-right": "alacritty"
+    "tooltip": true,
+    "states": {
+        "level1": 10,
+        "level2": 20,
+        "level3": 30,
+        "level4": 40,
+        "level5": 50,
+        "level6": 60,
+        "level7": 70,
+        "level8": 80,
+        "level9": 90,
+        "level10": 95
+    }
   },
   "clock": {
     "format": "{:L%A %H:%M}",
